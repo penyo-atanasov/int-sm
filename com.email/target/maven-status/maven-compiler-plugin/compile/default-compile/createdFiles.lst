@@ -1,8 +1,0 @@
-com/email/service/EmailServiceManager.class
-com/email/dto/Email.class
-com/email/service/MailGunService.class
-com/email/ApplicationConfig.class
-com/email/service/EmailWebService.class
-com/email/service/SendGridService.class
-com/email/service/EmailService.class
-com/email/Application.class
