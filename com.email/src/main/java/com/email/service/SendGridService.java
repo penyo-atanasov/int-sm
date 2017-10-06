@@ -70,7 +70,7 @@ public class SendGridService extends EmailService {
 				JSONArray personalizations = new JSONArray();
 				JSONObject firstPersonalization = new JSONObject();
 				personalizations.put(firstPersonalization);
-				firstPersonalization.put("to", buildRecipients(email.getRecepients()));
+				firstPersonalization.put("to", buildRecipients(email.getRecipients()));
 				if(email.getCc() != null) {
 					firstPersonalization.put("cc", buildRecipients(email.getCc()));
 				}

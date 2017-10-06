@@ -9,7 +9,7 @@ public class Email {
 	@NotNull
 	private String sender;
 	@NotNull
-	private String[] recepients;
+	private String[] recipients;
 	private String[] bcc;
 	private String[] cc;
 	@NotNull
@@ -20,8 +20,8 @@ public class Email {
 		
 	}
 	
-	public Email(String sender, String title, String body, String[] recepients, String[] bcc, String[] cc) {
-		this.recepients = recepients;
+	public Email(String sender, String title, String body, String[] recipients, String[] bcc, String[] cc) {
+		this.recipients = recipients;
 		this.sender = sender;
 		this.bcc = bcc;
 		this.cc = cc;
@@ -37,12 +37,12 @@ public class Email {
 		this.sender = sender;
 	}
 
-	public String[] getRecepients() {
-		return recepients;
+	public String[] getRecipients() {
+		return recipients;
 	}
 
-	public void setRecepients(String[] recepients) {
-		this.recepients = recepients;
+	public void setRecipients(String[] recipients) {
+		this.recipients = recipients;
 	}
 
 	public String[] getBcc() {
@@ -79,7 +79,7 @@ public class Email {
 
 	@Override
 	public String toString() {
-		return "Email [sender=" + sender + ", recepients=" + Arrays.toString(recepients) + ", bcc="
+		return "Email [sender=" + sender + ", recepients=" + Arrays.toString(recipients) + ", bcc="
 				+ Arrays.toString(bcc) + ", cc=" + Arrays.toString(cc) + ", title=" + subject + ", body=" + body + "]";
 	}
 	

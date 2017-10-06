@@ -26,7 +26,7 @@ public class MailGunService extends EmailService {
 	    builder.setScheme("https").setHost("api.mailgun.net")
 	    .setPath("v3/sandbox9f1f250c126a450cb59646ab5f18b63b.mailgun.org/messages")
 	    .setParameter("from", email.getSender())
-	    .setParameter("to", String.join(",", email.getRecepients()))
+	    .setParameter("to", String.join(",", email.getRecipients()))
 	    .setParameter("subject", email.getSubject())
 	    .setParameter("text", email.getBody());
 	    
